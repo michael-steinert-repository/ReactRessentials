@@ -35,6 +35,7 @@ class CurrencyCalculator extends React.Component {
         <div>
           <CurrencyInput currency="Euro" value={euro} onCurrencyChange={this.handleEuroChange}/>
           <CurrencyInput currency="Dollar" value={dollar} onCurrencyChange={this.handleEuroChange}/>
+          <h1>Currency1: {this.props.match.params.currencyParam}</h1>
         </div>
       );
     }
