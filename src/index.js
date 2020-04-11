@@ -34,11 +34,7 @@ class Clock extends React.Component{
 }
 
 ReactDOM.render(
-<<<<<<< HEAD
-  <Clock/>,
-=======
   <App/>,
->>>>>>> redirect
   document.getElementById('root')
 );
 
