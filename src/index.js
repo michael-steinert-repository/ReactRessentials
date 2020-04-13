@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
 
-class Clock extends React.Component{
+class Clock extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {date: new Date()};
+    this.state = { date: new Date() };
   }
 
   componentDidUpdate() {
@@ -20,7 +20,7 @@ class Clock extends React.Component{
 
   tick() {
     this.setState({
-      date: new Date()
+      date: new Date(),
     });
   }
 
@@ -33,9 +33,6 @@ class Clock extends React.Component{
   }
 }
 
-ReactDOM.render(
-  <App/>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 
 serviceWorker.unregister();
